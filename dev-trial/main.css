@@ -1,0 +1,193 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}   
+
+    .content li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+    .button {
+    margin-top: 20px;
+}
+
+    .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    margin-top: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    margin-top: 20px;
+  }
+  
+  .content li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
