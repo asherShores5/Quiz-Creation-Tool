@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editable Quiz</title>
+  </head>
+  <body>
+    <h1>Editable Quiz</h1>
+    <form>
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="question">
+      <br><br>
+      <label for="answer">Answer:</label>
+      <input type="text" id="answer" name="answer">
+      <br><br>
+      <button id="save">Save</button>
+    </form>
+    <script>
+      const form = document.querySelector("form");
+      const questionInput = document.querySelector("#question");
+      const answerInput = document.querySelector("#answer");
+      const saveBtn = document.querySelector("#save");
+
+      // Load quiz data from local storage
+      document.addEventListener("DOMContentLoaded", () => {
+        const quiz = JSON.parse(localStorage.getItem("quiz")) || {};
+        questionInput.value = quiz.question || "";
+        answerInput.value = quiz.answer || "";
+      });
+
+      // Save quiz data to local storage
+      saveBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        localStorage.setItem("quiz", JSON.stringify({
+          question: questionInput.value,
+          answer: answerInput.value
+        }));
+      });
+    </script>
+  </body>
+</html>
