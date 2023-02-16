@@ -92,3 +92,26 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# React web app specific
+build/
+public/
+# Uncomment the next line if you want to ignore the .env file in the root of the project
+#.env
+
+# Bower
+bower_components/
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt/
+
+# SASS
+.sass-cache/
+
+# CoffeScript compiled
+.coffee-cache/
+
+# Bootstrap
+dist/
+
+# End of https://www.gitignore.io/api/macos,node,windows,visualstudiocode,compiledsource,packages,security,react,bower,grunt,sass,coffeescript,bootstrap
