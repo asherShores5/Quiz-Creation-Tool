@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kadon't Quiz Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #banner {
+            background-color: #0f0f0f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f2f2f2;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-page-content {
+            text-align: center;
+        }
+
+        .quiz-page-content h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .quiz-page-content p {
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .create-quiz-button {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .create-quiz-button:hover {
+            background-color: #e7e7e7;
+        }
+        .select-quiz-button {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .select-quiz-button:hover {
+            background-color: #e7e7e7;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1 id="logo">Kadon't</h1>
+    </div>
+    <div class="container">
+        <div class="quiz-page-content">
+            <h1>Quiz Page</h1>
+            <p>Please select which option you would like to do.</p>
+            <button class="create-quiz-button">Create Quiz</button>
+            <button class="select-quiz-button">Select Quiz</button>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector(".create-quiz-button").addEventListener("click", function(){
+            window.location.href = "home.html";
+        });
+    </script>
+    <script>
+    document.querySelector(".select-quiz-button").addEventListener("click", function(){
+        window.location.href = "select-quiz.html";
+    });
+    </script>
+
+
+
+
+
+</body>
+</html>
