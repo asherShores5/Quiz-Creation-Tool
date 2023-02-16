@@ -1,0 +1,53 @@
+.JoinPage {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+  
+.JoinPage-logo {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.form-field {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.form-field label {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-field input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.form-field button {
+  padding: 8px;
+  font-size: 15px;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-field button:disabled {
+  background-color: #ccc;
+  color: #333;
+  cursor: not-allowed;
+}
