@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuizzClass Mobile Quiz</title>
+    <style>
+      /* CSS for styling the quiz */
+      .quiz-container {
+        text-align: center;
+      }
+      .quiz-question {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .quiz-answer-btn {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .timer {
+        margin-top: 20px;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1>QuizzClass Logo</h1>
+      </div>
+      <div class="quiz-question">
+        What is the capital of France?
+      </div>
+      <div>
+        <button class="quiz-answer-btn red">Paris</button>
+        <button class="quiz-answer-btn green">London</button>
+        <button class="quiz-answer-btn purple">New York</button>
+        <button class="quiz-answer-btn yellow">Tokyo</button>
+      </div>
+      <div class="timer">
+        Time Remaining: <span id="time">60</span> seconds
+      </div>
+    </div>
+  </body>
+</html>

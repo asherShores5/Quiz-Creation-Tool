@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header {
+        background-color: #4c82af;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .question-type {
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid gray;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .question-field {
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid gray;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .question-actions {
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid gray;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      button {
+        padding: 1em 2em;
+        background-color: #4c82af;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Evan's Evaluations</h1>
+    </div>
+
+    <div class="question-type">
+      <h2>Question Type</h2>
+      <button id="true-false-btn">True/False</button>
+      <button id="fill-in-the-blank-btn">Fill in the Blank</button>
+      <button id="multiple-choice-btn">Multiple Choice</button>
+      <button id="matching-btn">Matching</button>
+    </div>
+
+    <div class="question-field">
+      <h2>Question</h2>
+      <input type="text" placeholder="Enter question here..." />
+      <br />
+      <br />
+      <input type="text" placeholder="Option 1" />
+      <br />
+      <input type="text" placeholder="Option 2" />
+      <br />
+      <input type="text" placeholder="Option 3" />
+      <br />
+      <input type="text" placeholder="Option 4" />
+    </div>
+
+    <div class="question-actions">
+      <h2>Actions</h2>
+      <input type="text" placeholder="Quiz name" />
+      <br />
+      <br />
+      <button id="save-btn">Save</button>
+    </div>
+
+    <div class="footer">
+      <img src="image.jpg" alt="Image">
+    </div>
+  </body>
+</html>
