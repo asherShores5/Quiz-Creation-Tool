@@ -95,7 +95,6 @@ yarn-error.log*
 
 # React web app specific
 build/
-public/
 # Uncomment the next line if you want to ignore the .env file in the root of the project
 #.env
 

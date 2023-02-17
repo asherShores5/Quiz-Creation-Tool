@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kadon't Quiz</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #banner {
+            background-color: #0f0f0f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f2f2f2;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .landing-page-content {
+            text-align: center;
+        }
+
+        .landing-page-content h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .landing-page-content p {
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .start-quiz-btn {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .start-quiz-btn:hover {
+            background-color: #e7e7e7;
+        }
+
+        .login-page {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .login-page:hover {
+            background-color: #e7e7e7;
+        }
+
+        .sign-up-btn {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .sign-up-btn:hover {
+            background-color: #e7e7e7;
+        }
+
+
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+    <div id="banner">
+        <h1 id="logo">Kadon't</h1>
+    </div>
+    <div class="container">
+        <div class="landing-page-content">
+            <h1>Welcome to Kadon't Quiz!</h1>
+            <p>Test your knowledge with our challenging quiz. Select from a variety of question types and get ready to be challenged!</p>
+            <button class="start-quiz-btn">Start Quiz</button>
+            <button class="sign-up-btn">Sign Up</button>
+            <button class="login-page">Login</button>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".start-quiz-btn").addEventListener("click", function(){
+            window.location.href = "home.html";
+        });
+    </script>
+    <script>
+        document.querySelector(".sign-up-btn").addEventListener("click", function(){
+            window.location.href = "signup.html";
+        });
+    </script>
+    <script>
+        document.querySelector(".login-page").addEventListener("click", function(){
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
