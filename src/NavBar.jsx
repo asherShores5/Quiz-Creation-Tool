@@ -14,7 +14,7 @@ function NavBar() {
         <Link to="/join">
           <button className="nav-button">Join</button>
         </Link>
-        <Link to="/questioncreator">
+        <Link to="/create-quiz">
           <button className="nav-button">Make</button>
         </Link>
       </div>

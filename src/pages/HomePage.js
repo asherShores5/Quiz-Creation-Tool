@@ -14,7 +14,7 @@ function HomePage() {
         <Link to="/join">
           <button className="HomePage-button HomePage-button-orange" type="button">Join</button>
         </Link>
-        <Link to="/questioncreator">
+        <Link to="/create-quiz">
           <button className="HomePage-button HomePage-button-green" type="button">Make</button>
         </Link>
       </div>

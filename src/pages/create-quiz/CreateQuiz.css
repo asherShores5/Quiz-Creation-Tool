@@ -1,0 +1,64 @@
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+  
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+.question {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+}
+
+.question h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.question button {
+    margin-right: 0.5em;
+}  
