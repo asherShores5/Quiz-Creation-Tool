@@ -9,7 +9,7 @@ function HomePage() {
       <div className="HomePage-logo">
         <img src={logo} alt="logo" />
       </div>
-      <h1>Your quest with Kadonts starts here!</h1>
+      <h1>Your adventure with Kadont starts here!</h1>
       <div className="HomePage-buttons">
         <Link to="/join">
           <button className="HomePage-button HomePage-button-orange" type="button">Join</button>
