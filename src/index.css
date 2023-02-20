@@ -13,20 +13,24 @@ code {
 }
 
 nav {
-  display: flex;
-  justify-content: flex-start;
+  overflow: auto;
   align-items: center;
+  position: relative;
   padding: 15px;
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
 }
 
 .nav-left img {
+  float: left;
   display: flex;
   height: 50px;
+  position: absolute;
+  top: 25%;
 }
 
 .nav-right {
+  float: right;
   display: flex;
   justify-content: center;
   align-items: center;
