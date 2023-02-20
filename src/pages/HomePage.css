@@ -10,7 +10,7 @@
   max-width: 800px;
   max-height: 500px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .HomePage-button {
@@ -20,7 +20,7 @@
   font-weight: bold;
   border-radius: 10px;
   border: 1px solid #ccc;
-  color: black;
+  color: white;
   background-color: white;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -32,23 +32,24 @@
 }
 
 .HomePage-button-orange {
-  background-color: orange;
-  border-color: orange;
+  background-color: black;
+  border-color: black;
 }
 
 .HomePage-button-orange:hover {
-  background-color: #e82b2b;
-  border-color: #e82b2b;
+  /* color: black; */
+  background-color: blue;
+  border-color: blue;
   /* box-shadow: 0px 0px 10px #e82b2b; */
 }
 
 .HomePage-button-green {
-  background-color: #00a44e;
-  border-color: #00a44e;
+  background-color: black;
+  border-color: black;
 }
 
 .HomePage-button-green:hover {
-  background-color: #e82b2b;
-  border-color: #e82b2b;
+  background-color:blue;
+  border-color: blue;
   /* box-shadow: 0px 0px 10px #e82b2b; */
 }

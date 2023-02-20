@@ -41,7 +41,7 @@ class CreateQuiz extends React.Component {
       <Question
         key={question.id}
         title={question.title}
-        imageUrl={question.imageUrl}
+        imageUrl={ "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvectorified.com%2Fimages%2Fsmall-question-mark-icon-20.png&f=1&nofb=1&ipt=c853c31c3af3a4fded301d9993604a53c672e5a2252e57e71eab3c8d9c6edbe7&ipo=images"}
       />
     ));
 
