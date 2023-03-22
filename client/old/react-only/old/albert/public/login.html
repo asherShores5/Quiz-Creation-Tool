@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kadon't Quiz Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #banner {
+            background-color: #0f0f0f;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f2f2f2;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-page-content {
+            text-align: center;
+        }
+
+        .login-page-content h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .login-page-content p {
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .username-input {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .password-input {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .return-to-page {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .return-to-page:hover {
+            background-color: #e7e7e7;
+        }
+        .check-to-page {
+            background-color: #f2f2f2;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .check-to-page:hover {
+            background-color: #e7e7e7;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1 id="logo">Kadon't</h1>
+    </div>
+    <div class="container">
+        <div class="login-page-content">
+            <h1>Login</h1>
+            <p>Please enter your username and password.</p>
+            <input type="text" class="username-input" placeholder="Username">
+            <input type="password" class="password-input" placeholder="Password">
+            <button class="return-to-page">Return</button>
+            <button class="check-to-page">Check</button>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector(".return-to-page").addEventListener("click", function(){
+            window.location.href = "index.html";
+        });
+    </script>
+    <script>
+    document.querySelector(".check-to-page").addEventListener("click", function(){
+        window.location.href = "quiz-choice.html";
+    });
+    </script>
+
+
+</body>
+</html>
+
+
+

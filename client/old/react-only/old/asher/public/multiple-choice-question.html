@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Multiple Choice Question</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-type-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .question-type-list li {
+            list-style-type: none;
+            margin: 10px 0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+            color: #333333;
+        }
+
+        .question-type-list li:hover {
+            background-color: #e7e7e7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiple Choice Question</h1>
+        <form>
+            <div>
+                <label>Question:</label><br>
+                <input type="text" name="question">
+            </div>
+            <div>
+                <label>Answer:</label><br>
+                <input type="radio" name="answer" value="A">A<br>
+                <input type="radio" name="answer" value="B">B<br>
+                <input type="radio" name="answer" value="C">C<br>
+                <input type="radio" name="answer" value="D">D
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<a href="home.html" class="btn">Back to Question Type</a>
+<style>
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #e7e7e7;
+        border: 0;
+        border-radius: 5px;
+        color: #333333;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</html>

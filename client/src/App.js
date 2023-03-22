@@ -1,16 +1,29 @@
-import ReactDOM from "react-dom";
+// import React from 'react';
+// import Todo from './components/Todo';
+// import './App.css';
+
+// const App = () => {
+//   return (
+//     <div className="App">
+//       <Todo />
+//     </div>
+//   );
+// };
+
+// export default App;
+
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from "./pages/Layout";
+import Layout from "./Layout";
 import NoPage from "./pages/NoPage"
 import HomePage from './pages/HomePage';
-import CreateQuiz from "./pages/create-quiz/CreateQuiz";
-import QuestionCreator from "./pages/create-quiz/question-creator/QuestionCreator";
-import JoinPage from './pages/join/JoinPage';
-import SearchQuiz from "./pages/join/search/SearchQuiz";
-import JoinLogin from "./pages/join/login/JoinLogin";
-import JoinSuccess from "./pages/join/login/JoinSuccess";
-import JoinFailure from "./pages/join/login/JoinFailure";
+import CreateQuiz from "./pages/CreateQuiz";
+import QuestionCreator from "./pages/QuestionCreator";
+import JoinPage from './pages/JoinPage';
+import SearchQuiz from "./pages/SearchQuiz";
+import JoinLogin from "./pages/JoinLogin";
+import JoinSuccess from "./pages/JoinSuccess";
+import JoinFailure from "./pages/JoinFailure";
 
 export default function App() {
   return (
@@ -31,5 +44,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
-ReactDOM.render(<App />, document.getElementById("root"));
