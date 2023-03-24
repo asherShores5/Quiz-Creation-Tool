@@ -5,6 +5,8 @@ const Schema = mongoose.Schema;
 const questionSchema = new Schema({
   questionNumber: {
     type: Number,
+    min: 0,
+    max: 2147483647,
     required: [true, 'A question number is required'],
   },
   prompt: {
@@ -24,10 +26,14 @@ const questionSchema = new Schema({
   answers: {
     type: [String],
     required: [true, 'At least one answer is required'],
-  }
+  },
+  correctAnswers: {
+    type: [String],
+    required: [true, 'At least one correct answer is required'],
+  },
 });
 
-// Create model for todo
+// Create model for question
 const Question = mongoose.model('question', questionSchema);
 
 module.exports = Question;
