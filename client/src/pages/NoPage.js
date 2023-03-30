@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import CatImage from '../components/CatImage';
-import './HomePage.css';
+// import './HomePage.css';
+import "../App.css";
+import "../index.css";
 
 function HomePage() {
   return (

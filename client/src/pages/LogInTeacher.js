@@ -13,11 +13,11 @@ function HomePage() {
       </div>
       <h1>Education - Everyone - Everywhere, That's Evanest!</h1>
       <div className="HomePage-buttons">
-        <Link to="/HP1-page">
-          <button className="HomePage-button HomePage-button-orange" type="button">Start</button>
+        <Link to="/join">
+          <button className="HomePage-button HomePage-button-orange" type="button">make quiz</button>
         </Link>
         <Link to="/create-quiz">
-          <button className="HomePage-button HomePage-button-green" type="button">Create Quiz</button>
+          <button className="HomePage-button HomePage-button-green" type="button">start quiz</button>
         </Link>
       </div>
     </div>

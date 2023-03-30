@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import "./Question.css";
+// import "./Question.css";
+import "../App.css";
+import "../index.css";
 
 function Question(props) {
   const handleEditQuestion = (index) => {

@@ -8,14 +8,15 @@ function NavBar() {
       <div className="nav-left">
         <Link to="/">
           <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="nav-right">
         <Link to="/join">
-          <button className="nav-button">Sign In</button>
+          <button className="nav-button">abcdefg</button>
         </Link>
         <Link to="/create-quiz">
-          <button className="nav-button">Log in</button>
+          <button className="nav-button">efghitj</button>
         </Link>
       </div>
     </nav>

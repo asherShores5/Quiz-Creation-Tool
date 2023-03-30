@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
-import './JoinPage.css';
+// import './JoinPage.css';
+import "../App.css";
+import "../index.css";
 import { Form, Input, Button } from 'semantic-ui-react';
 import mongoose from 'mongoose';
 
@@ -36,7 +38,8 @@ function JoinPage() {
             onChange={e => setQuizID(e.target.value)}
           />
           <Link to="/join/search">
-            <Form.Field control={Button} disabled={!quizID} color='grey'>Search</Form.Field>
+            <Form.Field control={Button} disabled={!quizID} color='grey'>Search1</Form.Field>
+            <Form.Field control={Button} disabled={!quizID} color='grey'>Search2</Form.Field>
           </Link>
         </Form>
       </div>

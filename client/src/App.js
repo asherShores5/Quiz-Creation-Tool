@@ -25,6 +25,9 @@ import JoinLogin from "./pages/JoinLogin";
 import JoinSuccess from "./pages/JoinSuccess";
 import JoinFailure from "./pages/JoinFailure";
 
+import LIT from "./pages/LogInTeacher";
+import HP1 from "./pages/HomePage1";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -38,6 +41,10 @@ export default function App() {
           <Route path="join/login" element={<JoinLogin />} />
           <Route path="join/login/success" element={<JoinSuccess />} />
           <Route path="join/login/failure" element={<JoinFailure />} />
+
+          <Route path="LIT-page" element={<LIT />} />
+          <Route path="HP1-page" element={<HP1 />} />
+
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
