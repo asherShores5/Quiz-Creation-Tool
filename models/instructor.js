@@ -11,10 +11,6 @@ const instructorSchema = new Schema({
     type: String,
     required: [true, 'A password is required'],
   },
-  realName: {
-    type: String,
-    required: [true, 'The real name is required'],
-  },
 });
 
 // Create model for instructor

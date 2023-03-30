@@ -17,6 +17,9 @@ function HomePage() {
         <Link to="/create-quiz">
           <button className="HomePage-button HomePage-button-green" type="button">Make</button>
         </Link>
+        <Link to="/sign-in">
+          <button className="HomePage-button HomePage-button-green" type="button">Sign In</button>
+        </Link>
       </div>
     </div>
   );
