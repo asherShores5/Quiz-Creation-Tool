@@ -24,6 +24,7 @@ import SearchQuiz from "./pages/SearchQuiz";
 import JoinLogin from "./pages/JoinLogin";
 import JoinSuccess from "./pages/JoinSuccess";
 import JoinFailure from "./pages/JoinFailure";
+import SignIn from './pages/SignIn';
 
 import LIT from "./pages/LogInTeacher";
 import HP1 from "./pages/HomePage1";
