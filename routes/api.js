@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Question = require('../models/question');
+const Instructor = require('../models/instructor');
 
 // GET RESTful API
 router.get('/questions', (req, res, next) => {

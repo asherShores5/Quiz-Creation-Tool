@@ -98,7 +98,7 @@ class Input extends Component {
           <input type="password" onChange={this.handlePasswordChange} value={password} />
         </label>
         <br />
-        <button onClick={this.signIn}>Sign In</button>
+        <button class="HomePage-button" onClick={this.signIn}>Sign In</button>
       </div>
     );
   }
