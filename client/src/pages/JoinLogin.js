@@ -43,7 +43,7 @@ function JoinLogin() {
         <Form onSubmit={handleSubmit}>
           <Form.Field
             control={Input}
-            label='Now, enter your real name.'
+            label='Enter a name.'
             placeholder='e.g. Andrew Esch'
             value={quizID}
             onChange={e => setQuizID(e.target.value)}

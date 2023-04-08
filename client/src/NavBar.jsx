@@ -12,11 +12,11 @@ function NavBar() {
         </Link>
       </div>
       <div className="nav-right">
-        <Link to="/join">
-          <button className="nav-button">abcdefg</button>
+        <Link to="/LogInAccount">
+          <button className="nav-button">Log In</button>
         </Link>
-        <Link to="/create-quiz">
-          <button className="nav-button">efghitj</button>
+        <Link to="/join/login/failure">
+          <button className="nav-button">Sign Up</button>
         </Link>
       </div>
     </nav>

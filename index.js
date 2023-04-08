@@ -2,15 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/api');
-require('dotenv').config();
+require('dotenv').config("./");
 
-const app = express();
+const app = express()
 
 const port = process.env.PORT || 5000;
-
+let db = process.env.DB === undefined ? "mongodb+srv://rewesch:9aBq1lXz7UHSEtDs@quiz-creation-tool.5rkpzzw.mongodb.net/quiz_data?retryWrites=true&w=majority" : process.env.DB;
+console.log(db);
 // Connect to the database
 mongoose
-  .connect(process.env.DB, { useNewUrlParser: true })
+  .connect(db, { useNewUrlParser: true })
   .then(() => console.log(`Database connected successfully`))
   .catch((err) => console.log(err));
 
@@ -35,3 +36,5 @@ app.use((err, req, res, next) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+//need to connect to mongo

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./SignIn.css";
+import "../App.css";
+import "../index.css";
 import Input from "../components/Input";
 
-function SignIn() {
+function LogInAccount() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -31,7 +32,7 @@ function SignIn() {
       })
       .catch((err) => {
         console.log(err);
-        console.log("An error occurred while signing in");
+        console.log("An error occurred while Logging in");
       });
   };
   
@@ -43,4 +44,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default LogInAccount;
