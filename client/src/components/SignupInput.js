@@ -10,23 +10,11 @@ class Input extends Component {
     password: "",
   };
 
-  signIn = () => {
+  signUp = () => {
     const { email, password } = this.state;
 
     if (email && password) {
-      axios
-        .post("/instructors", { email, password })
-        .then((res) => {
-          const { token } = res.data;
-
-          if (token) {
-            localStorage.setItem("token", token);
-            this.props.history.push("join/login/success"); // Redirect to dashboard
-          } else {
-            console.log("Invalid email or password");
-          }
-        })
-        .catch((err) => console.log(err));
+        
     } else {
       console.log("Email and password required");
     }
@@ -44,30 +32,16 @@ class Input extends Component {
     });
   };
 
-  verifyCredentials = (e) => {
+    verifyIfUserExists = (e) => {
     const { email, password } = this.state;
 
     try {
-      // Find the user in the database by email
-      axios.get({email}); // What is this line for?
-
       const user = Instructor.findOne({ email });
-      if (!user) {
-        // User not found
+      if (user) {
+        // User found
         return null;
       }
   
-      // Verify the password
-      //const passwordMatch = bcrypt.compare(password, user.password);
-      if (password === user.password) {
-        return user;
-      } else {
-        // Password doesn't match
-        return null;
-      }
-  
-      // Credentials are valid
-      return true;
     } catch (err) {
       console.error(err);
       return false;
@@ -99,7 +73,7 @@ class Input extends Component {
           <input type="password" onChange={this.handlePasswordChange} value={password} />
         </label>
         <br />
-        <button className="nav-button" onClick={this.signIn}>Log in</button>
+        <button className="nav-button" onClick={this.signUp}>Sign up</button>
       </div>
     );
   }

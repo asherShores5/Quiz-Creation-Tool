@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -39,27 +44,28 @@ nav {
   padding-bottom: 10px;
 }
 
+.nav-button:hover {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
 .nav-button {
-  background-color: transparent;
+  background-color: #000000;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 20px 60px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-}
-
-.nav-button:hover {
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
+  width: 100%;
 }
 
 .HomePage {
@@ -84,7 +90,6 @@ font-size: 1.2rem;
 font-weight: bold;
 border-radius: 10px;
 border: 1px solid #ccc;
-color: white;
 background-color: white;
 transition: all 0.2s ease-in-out;
 cursor: pointer;
@@ -124,4 +129,5 @@ border-color: blue;
   align-items: center;
   height: 100vh;
   background-color: white;
+  width: 100%;
 }

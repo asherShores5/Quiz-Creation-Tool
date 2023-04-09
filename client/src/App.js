@@ -25,6 +25,7 @@ import JoinLogin from "./pages/JoinLogin";
 import JoinSuccess from "./pages/JoinSuccess";
 import JoinFailure from "./pages/JoinFailure";
 import LogInAccount from './pages/LogInAccount';
+import SignupAccount from './pages/SignupAccount';
 
 export default function App() {
   return (
@@ -34,12 +35,13 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="create-quiz" element={<CreateQuiz />} />
           <Route path="create-quiz/question-creator" element={<QuestionCreator />} />
-          <Route path="join" element={<JoinPage />} />
-          <Route path="join/search" element={<SearchQuiz />} />
-          <Route path="join/login" element={<JoinLogin />} />
+          <Route path="join" element={<JoinPage />} />  {/* lets find a quiz  */}
+          <Route path="join/search" element={<SearchQuiz />} /> {/* waiting to join, find quiz  */}
+          <Route path="join/login" element={<JoinLogin />} /> {/* find quiz  */}
           <Route path="join/login/success" element={<JoinSuccess />} />
           <Route path="join/login/failure" element={<JoinFailure />} />
           <Route path="LogInAccount" element={<LogInAccount />} />
+          <Route path="SignupAccount" element={<SignupAccount />} />
           <Route path="*" element={<NoPage />} />
 
 
