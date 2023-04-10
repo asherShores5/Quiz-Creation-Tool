@@ -2,6 +2,7 @@
 // import axios from "axios";
 // //const mongoose = require('mongoose');
 // //const bcrypt = require('bcrypt');
+const Instructor = require('../models/instructor');
 
 // class Input extends Component {
 //   state = {
@@ -48,7 +49,7 @@
 
 //     try {
 //       // Find the user in the database by email
-//       axios.get({email});
+//       axios.get({email}); // What is this line for?
 
 //       const user = Instructor.findOne({ email });
 //       if (!user) {
@@ -98,7 +99,7 @@
 //           <input type="password" onChange={this.handlePasswordChange} value={password} />
 //         </label>
 //         <br />
-//         <button class="HomePage-button" onClick={this.signIn}>Sign In</button>
+//         <button className="nav-button" onClick={this.signIn}>Log in</button>
 //       </div>
 //     );
 //   }

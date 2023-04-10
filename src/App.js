@@ -26,11 +26,6 @@ import JoinSuccess from "./pages/JoinSuccess";
 import JoinFailure from "./pages/JoinFailure";
 import LogInAccount from './pages/LogInAccount';
 import SignupAccount from './pages/SignupAccount';
-import TeacherPage from './pages/TeacherPage';
-import StudentPage from './pages/StudentPage';
-
-
-import SurveyQuiz from "./pages/SurveyQuiz";
 
 export default function App() {
   if (!localStorage.getItem('isAuthorized')) {
@@ -51,10 +46,8 @@ export default function App() {
           <Route path="join/login/failure" element={<JoinFailure />} />
           <Route path="LogInAccount" element={<LogInAccount />} />
           <Route path="SignupAccount" element={<SignupAccount />} />
-          <Route path="TeacherPage" element={<TeacherPage />} />
-          <Route path="StudentPage" element={<StudentPage />} />
-          <Route path="survey-quiz" element={<SurveyQuiz />} />
           <Route path="*" element={<NoPage />} />
+
 
         </Route>
       </Routes>

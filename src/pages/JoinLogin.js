@@ -7,7 +7,18 @@ import "../index.css";
 import { Form, Input, Button } from 'semantic-ui-react';
 import mongoose from 'mongoose';
 
-function JoinPage() {
+function getRandomPage() {
+    // generate a random number between 1 and 2
+    const randomNumber = Math.floor(Math.random() * 2) + 1;
+    // Construct the URL for the random page
+    if (randomNumber === 1) {
+        return '/join/login/success';
+    } else {
+        return '/join/login/failure';
+    }
+}
+
+function JoinLogin() {
   const [quizID, setQuizID] = useState('');
 
   const handleSubmit = () => {
@@ -27,22 +38,23 @@ function JoinPage() {
       <div className="JoinPage-logo">
         <img src={logo} alt="logo" />
       </div>
-      <h1>Let's a find a quiz!</h1>
+      <h1>Found the quiz!</h1>
       <div className="form-field">
         <Form onSubmit={handleSubmit}>
           <Form.Field
             control={Input}
-            label='Quiz ID'
-            placeholder='Ex. #000000'
+            label='Enter a name.'
+            placeholder='e.g. Andrew Esch'
             value={quizID}
             onChange={e => setQuizID(e.target.value)}
           />
           <Link to="/join/login/success">
-            <Form.Field control={Button} disabled={!quizID} color='grey'>Search</Form.Field>
+            <Form.Field control={Button} disabled={!quizID} color='grey'>Login</Form.Field>
           </Link>
         </Form>
       </div>
     </div>
   );
 };
-export default JoinPage;
+
+export default JoinLogin;

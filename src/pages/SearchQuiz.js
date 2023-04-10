@@ -9,7 +9,6 @@ function SearchQuiz() {
       const timeoutId = setTimeout(() => {
         navigate('/join/login');
       }, 2000);
-
   
       // clean up the timer when the component unmounts
       return () => clearTimeout(timeoutId);
