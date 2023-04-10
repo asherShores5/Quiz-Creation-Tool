@@ -10,7 +10,6 @@ class Input extends Component {
     email: "",
     password: "",
     retypePassword: "",
-    realname: "",
     identity: "teacher",
   };
 
@@ -31,7 +30,7 @@ class Input extends Component {
     } else {
         localStorage.setItem('isAuthorized', true);
         // redirect to home page
-        this.props.navigate('/TeacherPage');
+        this.props.navigate('/create-quiz');
     }
   };
 
@@ -52,12 +51,6 @@ class Input extends Component {
         retypePassword: e.target.value,
     })
   }
-
-  handleRealNameChange = (e) => {
-    this.setState({
-      realname: e.target.value,
-    });
-  };
 
 verifyIfUserExists = (e) => {
     const { email, password } = this.state;
@@ -92,16 +85,11 @@ verifyIfUserExists = (e) => {
   
 
   render() {
-    const { email, password, retypePassword, realname,identity } = this.state;
+    const { email, password, retypePassword, identity } = this.state;
 
     return (
       <div>
         <label>
-          Real Name:<br/>
-            <input type="Real Name" onChange={this.handleRealNameChange} value={realname} />
-          </label>
-          <br />
-          <label>
           Email:<br/>
           <input type="email" onChange={this.handleEmailChange} value={email} />
         </label>
