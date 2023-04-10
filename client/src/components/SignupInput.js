@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import TeacherPage from "../pages/TeacherPage";
 //const mongoose = require('mongoose');
 //const bcrypt = require('bcrypt');
 const Instructor = require('../models/instructor');
@@ -17,8 +18,8 @@ class Input extends Component {
   signUp = (e) => {
     e.preventDefault();
 
-    const { email, password, retypePassword } = this.state;
-
+    const { email, password, retypePassword, realname, identity } = this.state;
+    console.log(identity);
     if (!email || !password ) {
       console.log("Email and password required");
     }
@@ -30,8 +31,7 @@ class Input extends Component {
         console.log('Passwords do not match.');
     } else {
         localStorage.setItem('isAuthorized', true);
-        // redirect to home page
-        this.props.navigate('/TeacherPage');
+          this.props.navigate('/TeacherPage');
     }
   };
 

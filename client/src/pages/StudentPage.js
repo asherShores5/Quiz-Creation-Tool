@@ -16,7 +16,7 @@ function StudentPage() {
         <Link to="/join">
           <button className="StudentPage-button: Make Quiz" type="button">Join Quiz</button>
         </Link>
-        <Link to="/join/search">
+        <Link to="/*">
           <button className="StudentPage-button: Start Quiz" type="button">Other join parts and Review Quiz</button>
         </Link>
       </div>

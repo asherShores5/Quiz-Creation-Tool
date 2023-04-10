@@ -37,7 +37,7 @@ function JoinPage() {
             value={quizID}
             onChange={e => setQuizID(e.target.value)}
           />
-          <Link to="/join/login/success">
+          <Link to="/join/search">
             <Form.Field control={Button} disabled={!quizID} color='grey'>Search</Form.Field>
           </Link>
         </Form>
