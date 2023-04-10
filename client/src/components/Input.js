@@ -2,7 +2,7 @@
 // import axios from "axios";
 // //const mongoose = require('mongoose');
 // //const bcrypt = require('bcrypt');
-const Instructor = require('../models/instructor');
+// const Instructor = require('../models/instructor');
 
 // class Input extends Component {
 //   state = {
