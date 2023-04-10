@@ -30,6 +30,7 @@ import TeacherPage from './pages/TeacherPage';
 import StudentPage from './pages/StudentPage';
 
 
+import SurveyQuiz from "./pages/SurveyQuiz";
 
 export default function App() {
   if (!localStorage.getItem('isAuthorized')) {
@@ -51,9 +52,9 @@ export default function App() {
           <Route path="LogInAccount" element={<LogInAccount />} />
           <Route path="SignupAccount" element={<SignupAccount />} />
           <Route path="TeacherPage" element={<TeacherPage />} />
-            <Route path="StudentPage" element={<StudentPage />} />
+          <Route path="StudentPage" element={<StudentPage />} />
+          <Route path="survey-quiz" element={<SurveyQuiz />} />
           <Route path="*" element={<NoPage />} />
-
 
         </Route>
       </Routes>

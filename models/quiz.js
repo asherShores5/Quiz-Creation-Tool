@@ -17,10 +17,10 @@ const quizSchema = new Schema({
     required: [true, 'A music name field is required'],
     default: "Default",
   },
-  sections: [{
+  questions: [{
     type: Schema.Types.ObjectId,
     ref: 'Question',
-    required: [true, 'At least one section is required'],
+    required: [true, 'At least one question is required'],
   }],
   isActive: {
     type: Boolean,
