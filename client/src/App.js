@@ -25,6 +25,7 @@ import JoinLogin from "./pages/JoinLogin";
 import JoinSuccess from "./pages/JoinSuccess";
 import JoinFailure from "./pages/JoinFailure";
 import LogInAccount from './pages/LogInAccount';
+import SurveyQuiz from "./pages/SurveyQuiz";
 
 export default function App() {
   return (
@@ -40,8 +41,8 @@ export default function App() {
           <Route path="join/login/success" element={<JoinSuccess />} />
           <Route path="join/login/failure" element={<JoinFailure />} />
           <Route path="LogInAccount" element={<LogInAccount />} />
+          <Route path="survey-quiz" element={<SurveyQuiz />} />
           <Route path="*" element={<NoPage />} />
-
 
         </Route>
       </Routes>
