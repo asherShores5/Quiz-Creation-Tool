@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SignupAccount"
 import "../App.css";
 import "../index.css";
 import SignupInput from "../components/SignupInput";

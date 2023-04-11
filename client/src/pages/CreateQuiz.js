@@ -1,8 +1,8 @@
 import React from 'react';
 import Question from './Question';
 import { useNavigate, Link } from "react-router-dom";
-// import "./CreateQuiz.css";
-// import "./Question.css";
+import "./CreateQuiz.css";
+import "./Question.css";
 import "../App.css";
 import "../index.css";
 

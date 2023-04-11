@@ -7,8 +7,8 @@ import "../index.css";
 
 function TeacherPage() {
   return (
-    <div className="TeacherPage">
-      <div className="TeacherPage-logo">
+    <div className="HomePage">
+      <div className="HomePage-logo">
         <img src={logo} alt="logo" />
       </div>
       <h1>Professor Page</h1>

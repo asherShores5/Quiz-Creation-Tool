@@ -45,8 +45,8 @@ nav {
 }
 
 .nav-button:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: gold;
+  color: black;
   cursor: pointer;
 }
 

@@ -7,8 +7,8 @@ import "../index.css";
 
 function StudentPage() {
   return (
-    <div className="StudentPage">
-      <div className="StudentPage-logo">
+    <div className="HomePage">
+      <div className="HomePage-logo">
         <img src={logo} alt="logo" />
       </div>
       <h1>Student Page</h1>
@@ -16,8 +16,8 @@ function StudentPage() {
         <Link to="/join">
           <button className="StudentPage-button: Make Quiz" type="button">Join Quiz</button>
         </Link>
-        <Link to="/*">
-          <button className="StudentPage-button: Start Quiz" type="button">Other join parts and Review Quiz</button>
+        <Link to="/create-quiz">
+          <button className="StudentPage-button: Start Quiz" type="button">Make Quiz</button>
         </Link>
       </div>
     </div>

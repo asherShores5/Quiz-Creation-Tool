@@ -48,7 +48,7 @@ function JoinLogin() {
             value={quizID}
             onChange={e => setQuizID(e.target.value)}
           />
-          <Link to="/join/login/success">
+          <Link to="/survey-quiz">
             <Form.Field control={Button} disabled={!quizID} color='grey'>Login</Form.Field>
           </Link>
         </Form>

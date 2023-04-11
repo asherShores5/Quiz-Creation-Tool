@@ -7,11 +7,10 @@ require('dotenv').config("./");
 const app = express()
 
 const port = process.env.PORT || 5000;
-let db = process.env.DB === undefined ? "mongodb+srv://rewesch:9aBq1lXz7UHSEtDs@quiz-creation-tool.5rkpzzw.mongodb.net/quiz_data?retryWrites=true&w=majority" : process.env.DB;
-console.log(db);
+
 // Connect to the database
 mongoose
-  .connect(db, { useNewUrlParser: true })
+  .connect(process.env.DB, { useNewUrlParser: true })
   .then(() => console.log(`Database connected successfully`))
   .catch((err) => console.log(err));
 

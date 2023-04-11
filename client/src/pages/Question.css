@@ -36,8 +36,8 @@
     font-weight: bold;
     border-radius: 10px;
     /* border: 1px solid black; */
-    color: black;
-    background-color: green;
+    color: white;
+    background-color: blue;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     margin-bottom: 15px;
@@ -51,10 +51,19 @@
     font-weight: bold;
     border-radius: 10px;
     /* border: 1px solid black; */
-    color: black;
-    background-color: red;
+    color: white;
+    background-color:red;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     margin-bottom: 15px;
   }
   
+  .edit-button:hover {
+    background-color: black;
+    color:blue;
+}
+
+.delete-button:hover {
+  background-color: black;
+  color:red;
+}

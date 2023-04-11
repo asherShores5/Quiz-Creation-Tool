@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 // import './QuestionCreator.css';
-import "../App.css";
-import "../index.css";
+// import "../App.css";
+// import "../index.css";
+import "./QuestionCreator"
 
 const QuestionCreator = () => {
   const [prompt, setPrompt] = useState('');

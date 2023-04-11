@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import './JoinPage.css';
 import "../App.css";
 import "../index.css";
+import "./JoinPage.css";
 import { Form, Input, Button } from 'semantic-ui-react';
 import mongoose from 'mongoose';
 

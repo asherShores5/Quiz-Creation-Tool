@@ -31,7 +31,7 @@ class Input extends Component {
         console.log('Passwords do not match.');
     } else {
         localStorage.setItem('isAuthorized', true);
-          this.props.navigate('/TeacherPage');
+          this.props.navigate('/StudentPage');
     }
   };
 
