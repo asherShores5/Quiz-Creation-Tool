@@ -48,6 +48,7 @@ button {
     color: #fff;
     background-color: black;
     cursor: pointer;
+    
 }
 
 button:hover {
@@ -69,6 +70,7 @@ button.delete:hover {
     border: 1px solid #ccc;
     border-radius: 3px;
     background-color: #f8f8f8;
+    
 }
 
 .question h2 {
@@ -78,4 +80,5 @@ button.delete:hover {
 
 .question button {
     margin-right: 0.5em;
+    
 }  

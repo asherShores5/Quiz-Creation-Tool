@@ -1,3 +1,23 @@
+/* 
+.question-creator,
+.question-creator-header
+.question-creator-body,
+.question-creator-prompt,
+.question-creator-type,
+.question-creator-time-limit,
+label,
+textarea,
+.question-creator-save-button,
+  .question-creator-remove-button {
+    text-align: center;
+}
+  
+
+.prompt{
+    color:red;
+} */
+  
+
 .question-creator {
     display: flex;
     flex-direction: column;
@@ -24,6 +44,8 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    
+    
 }
 
 label {
@@ -64,6 +86,7 @@ textarea {
     border-radius: 5px;
     font-size: 16px;
     margin-top: 20px;
+    
 }
   
 .question-creator-remove-button {
@@ -77,3 +100,5 @@ textarea {
 }
   
   
+
+

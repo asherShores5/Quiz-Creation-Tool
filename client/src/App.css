@@ -46,7 +46,7 @@ ul {
   list-style: none;
   text-align: left;
   padding: 15px;
-  background: #171a1f;
+  background: black;
   border-radius: 5px;
 }
 
@@ -54,10 +54,21 @@ li {
   padding: 15px;
   font-size: 1.5rem;
   margin-bottom: 15px;
-  background: #282c34;
+  background: green;
   border-radius: 5px;
   overflow-wrap: break-word;
   cursor: pointer;
+}
+
+ul :hover{
+  background: white;
+  color: green;
+}
+
+
+li :hover{
+  /* color:red;
+  background-color: blue; */
 }
 
 @media only screen and (min-width: 300px) {

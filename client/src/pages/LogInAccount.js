@@ -26,8 +26,10 @@ function LogInAccount() {
         if (token) {
           localStorage.setItem("token", token);
           // Redirect to dashboard
+          
         } else {
           console.log("Invalid email or password");
+          
         }
       })
       .catch((err) => {
