@@ -36,6 +36,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 1em;
+    
 }
 
 button {
@@ -48,6 +49,7 @@ button {
     color: #fff;
     background-color: black;
     cursor: pointer;
+    
     
 }
 
@@ -71,11 +73,13 @@ button.delete:hover {
     border-radius: 3px;
     background-color: #f8f8f8;
     
+    
 }
 
 .question h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
+    
 }
 
 .question button {
