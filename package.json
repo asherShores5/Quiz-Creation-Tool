@@ -4,7 +4,7 @@
   "description": "Developing a LMS tool for Lucia Siebers of University of Duisburg, Germany to provide classroom quizzing tools.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "start-watch": "nodemon index.js",
     "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
