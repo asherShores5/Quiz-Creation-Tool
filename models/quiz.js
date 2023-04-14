@@ -27,10 +27,6 @@ const quizSchema = new Schema({
     required: [true, 'Must be active or not'],
     default: false,
   },
-  musicName: {
-    type: String,
-    required: false,
-  },
   isRunning: {
     type: Boolean,
     required: [true, 'Must be running or not'],

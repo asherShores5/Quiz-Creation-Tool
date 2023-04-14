@@ -6,11 +6,10 @@
   margin-right: auto;
 }
 
-
-
 input {
   height: 40px;
   width: 100%;
+  font-size: 1rem;
   border: none;
   border-bottom: 2px #101113 solid;
   border-radius: 3px;
@@ -26,6 +25,10 @@ input[type="radio"] {
 
 input:focus {
   outline: none;
+}
+
+.answer-list li input[type="radio"] {
+  display: none; /* hide the radio buttons */
 }
 
 button {
@@ -45,32 +48,34 @@ button:focus {
 }
 
 ul {
+  height: auto;
+  width: 800px;
+  overflow: auto;
   list-style: none;
-  text-align: left;
   padding: 15px;
   background: black;
   border-radius: 5px;
 }
 
 li {
+  height: auto;
+  max-height: none;
   padding: 15px;
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin: 10px 0;
   background: green;
   border-radius: 5px;
   overflow-wrap: break-word;
   cursor: pointer;
 }
 
+li.selected {
+  background-color: white;
+}
+
 ul :hover{
   background: white;
   color: green;
-}
-
-
-li :hover{
-  /* color:red;
-  background-color: blue; */
 }
 
 @media only screen and (min-width: 300px) {
@@ -99,7 +104,7 @@ li :hover{
   }
 
   button {
-    width: 30%;
+    width: 50%;
     margin-left: 10px;
     margin-top: 0;
   }

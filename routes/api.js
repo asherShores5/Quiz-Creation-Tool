@@ -6,6 +6,8 @@ const { getStudents, getStudentById, createStudent, updateStudent, deleteStudent
 const { createInstructor, loginInstructor, logoutInstructor } = require('../models/instructor');
 const { getSections, getSectionById, createSection, updateSection, deleteSection} = require('../models/section');
 const QuizAnalytics = require('../models/analytics');
+const Results = require('../models/results')
+
 
 // RESTful API for questions
 
@@ -91,6 +93,83 @@ async function getQuestion(req, res, next) {
     return res.status(500).json({ message: err.message });
   }
   res.question = question;
+  next();
+}
+
+// RESTful API for quiz results
+
+// Get all quiz results
+router.get('/results', async (req, res) => {
+  try {
+    const quizResults = await Results.find();
+    res.json(quizResults);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+// Get one quiz result by ID
+router.get('/results/:id', getQuizResult, (req, res) => {
+  res.json(res.quizResult);
+});
+
+// Create one quiz result
+router.post('/results', async (req, res) => {
+  const quizResult = new Results({
+    studentName: req.body.studentName,
+    studentEmail: req.body.studentEmail,
+    answers: req.body.answers,
+  });
+  try {
+    const newQuizResult = await quizResult.save();
+    res.status(201).json(newQuizResult);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
+// Update one quiz result
+router.patch('/results/:id', getQuizResult, async (req, res) => {
+  if (req.body.studentName != null) {
+    res.quizResult.studentName = req.body.studentName;
+  }
+  if (req.body.studentEmail != null) {
+    res.quizResult.studentEmail = req.body.studentEmail;
+  }
+  if (req.body.answers != null) {
+    res.quizResult.answers = req.body.answers;
+  }
+  try {
+    const updatedQuizResult = await res.quizResult.save();
+    res.json(updatedQuizResult);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
+// Delete one quiz result
+router.delete('/results/:id', getQuizResult, async (req, res) => {
+  try {
+    await res.quizResult.remove();
+    res.json({ message: 'Quiz result deleted' });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+// Middleware function to get quiz result by ID
+async function getQuizResult(req, res, next) {
+  let quizResult;
+  try {
+    quizResult = await Results.findById(req.params.id);
+    if (quizResult == null) {
+      return res.status(404).json({ message: 'Quiz result not found' });
+    }
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+
+  res.quizResult = quizResult;
   next();
 }
 
